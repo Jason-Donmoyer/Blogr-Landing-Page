@@ -2,9 +2,79 @@
                 /* IMPORTS */
 /******************************************/
 
+
+/********** FONTS **********/
+
+/* Font-Family */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+
 /******************************************/
                 /* VARIABLES */
 /******************************************/
+
+:root {
+
+
+  /********** COLORS **********/
+
+  /* Primary Colors */
+
+  /* CTA Text */
+  --light-red: hsl(356, 100%, 66%);
+  /* CTA Hover Background */
+  --very-light-red: hsl(355, 100%, 74%);
+  /* Headings */
+  --very-dark-blue: hsl(208, 49%, 24%);
+
+  /* Neutral Coilors */
+  /* Text */
+  -white: hsl(0, 0%, 100%);
+  /* Footer Text */
+  --grayisg-blue: hsl(240, 2%, 79%);
+  /* Body Copy */
+  --very-dark-grayish-blue: hsl(207, 13%, 34%);
+  /* Footer Background */
+  --very-dark-black-blue: hsl(240, 10%, 16%);
+
+  /* Gradients */
+  /* Background-Intro/CTA-MobileNav */
+  --gradient-very-light-red: hsl(13, 100%, 72%);
+  --gradient-light-red: hsl(353, 100%, 62%);
+  --intro-gradient: 135deg, var(--gradient-very-light-red) 0%, var(--gradient-light-red) 100%;
+
+  /* Background Body */
+  --gradient-very-dark-blue: hsl(237, 17%, 21%);
+  --gradient-very-dark-desaturated-blue: hsl(237, 23%, 32%);
+  --body-gradient: 135deg, var(--gradient-very-dark-blue) 0%, var(--gradient-very-dark-desaturated-blue) 100%;
+
+  /********** FONTS **********/
+
+
+  /* Font Size */
+  --font-size: 16px;
+
+  /* Font-Family */
+
+  /* Overpass */
+  --overpass: 'Overpass', sans-serif;
+
+  /* Ubuntu */  
+  --ubuntu: 'Ubuntu', sans-serif;
+
+
+  /* Font-Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+
+}
+
+
 
 /******************************************/
                 /* GLOBAL */
@@ -16,6 +86,11 @@
   box-sizing: border-box;
   overflow-x: hidden;
   /* border: 1px solid red !important; */
+}
+
+body {
+  font-size: var(--font-size);
+  background: linear-gradient(var(--body-gradient));
 }
 
 /******************************************/
